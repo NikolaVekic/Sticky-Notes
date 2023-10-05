@@ -1,0 +1,23 @@
+<%- include('partials/header') %>
+
+
+<div style="background:transparent !important" class="jumbotron centered">
+  <div class="container">
+    <img src="images/notes.svg" class="img col-lg-12">
+    <h1 class="display-3">Sticky Notes</h1>
+    <p class="lead">Organize Your Thoughts, Anytime, Anywhere!</p>
+    <hr>
+    <% if (locals.currentUser)  { %>
+      <!-- Content to display if the user is authenticated -->
+      <a class="btn btn-lg button" href="/create" role="button">Create Note</a>
+      <a class="btn btn-lg button" href="/logout" role="button">Logout</a>
+    <% } else { %>
+      <a class="btn btn-lg button" href="/register" role="button">Register</a>
+      <a class="btn btn-lg button" href="/login" role="button">Login</a>
+    <% } %>  
+
+
+  </div>
+</div>
+
+<%- include('partials/footer') %>

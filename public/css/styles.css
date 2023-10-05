@@ -1,0 +1,62 @@
+:root{
+  --color-primary: #6c63ff;
+  --color-secondary: #ff6584;
+}
+
+
+body {
+  background-color: white;
+}
+
+.centered {
+    padding-top: 200px;
+    text-align: center;
+}
+
+
+.secret-text {
+  text-align: center;
+  font-size: 2rem;
+  color: #fff;
+  background-color: #000;
+}
+
+.center{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  margin: 1rem;
+}
+
+.box {
+  padding: 1rem;
+  background-color: white;
+}
+
+.button {
+  background-color: #e6e6e6;
+  color: #343a40;
+}
+
+
+.button:hover {
+  background-color: var(--color-primary);
+  color: white;
+}
+
+.nav-style {
+  background-color: var(--color-primary);
+}
+
+.card-bg {
+  background-color: var(--color-primary);
+}
+
+.footer-bg {
+  background-color: #fff;
+}
+
+textarea {
+  resize: none;
+}
